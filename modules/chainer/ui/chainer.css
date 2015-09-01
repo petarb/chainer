@@ -1,0 +1,94 @@
+/* chainer.css */
+
+h1
+{
+	margin-top: 1.0rem;
+	margin-bottom: 0.8rem;
+}
+
+p
+{
+	margin-bottom: 1.3rem;
+}
+
+p.credits
+{
+	font-size: 11px;
+	color: #999;
+}
+
+.Editor textarea
+{
+	height: 200px;
+	font-size: 20px;
+	font-family: monospace;
+}
+
+.Formula,
+.ChainsTree
+{
+	margin-bottom: 14px;
+	font-size: 20px;
+}
+
+.fm-item,
+.fm-link
+{
+	padding: 6px;
+	border-radius: 4px;
+	border: 1px solid #bbb;
+	font-family: monospace;
+}
+
+.fm-item-bad
+{
+	background-color: pink;
+}
+
+.ChainsTree
+{
+	margin-top: 8px;
+}
+
+.fm-li
+{
+	white-space: nowrap;
+}
+
+.fm-link
+{
+	margin-right: 4px;
+	font-size: 18px;
+}
+
+.fm-link-second
+{
+	border: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+.fm-link-dist
+{
+	background-color: yellow;
+}
+
+.fm-link-taut
+{
+	background-color: greenyellow;
+}
+
+.fm-link-axiom,
+.fm-link-irred
+{
+	color: red;
+	border: 1px solid red;
+	margin-left: 10px;
+}
+
+code.fm-link-axiom,
+code.fm-link-irred
+{
+	margin-left: inherit;
+	background-color: white;
+}

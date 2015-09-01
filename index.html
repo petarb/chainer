@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Chainer</title>
+        <meta name="description" content="Implementation of D-chains for PSC.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="modules/normalize/normalize.css">
+        <link rel="stylesheet" href="modules/html5bp/html5bp.css">
+        <link rel="stylesheet" href="modules/skeleton/skeleton.css">
+        <link rel="stylesheet" href="modules/katex/katex.min.css">
+        <link rel="stylesheet" href="modules/treeview/treeview.css">
+        <link rel="stylesheet" href="modules/chainer/ui/chainer.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Chainer</h1>
+            <p>
+                Enter multiple formulas into the text area below.
+                Parsing (plus conversion into <em>NNF</em>) will happen
+                automatically and the interpreted inputs will appear in
+                the list below.
+                Accepted syntax contains
+                atomic propositions
+                    <code>[a-z]</code>,
+                propositional constants
+                    <code>T</code> (true),
+                    <code>F</code> (false)
+                and logical connectives
+                    <code>^</code> (negation),
+                    <code>*</code> (conjunction),
+                    <code>+</code> (disjunction),
+                    <code>-></code> (implication).
+                If the inputs are valid, <em>Derive in PSC</em> will
+                build a tree of deduction chains, where each leaf is
+                a separate D-chain.  Special sequence items are
+                    <code class="fm-link-dist">distinguished formulas</code>,
+                    <code class="fm-link-taut">tautologies</code>
+                and leaf identifiers
+                    <code class="fm-link-axiom">axiom</code>
+                and
+                    <code class="fm-link-irred">irreducible</code>.
+                If every leaf is an axiom, the input sequence is
+                <em>derivable in PSC</em>.
+            </p>
+            <p>
+                Example input:
+                <code>((a*T)+c)+(^c*(b+F))</code>
+            </p>
+            <div id="Chainer"></div>
+            <p class="credits">
+                Made with PEG.js, React, HTML5 Boilerplate,
+                Normalize.css, Skeleton.css and KaTeX.
+            </p>
+        </div>
+        <script src="modules/react/react-0.13.3.min.js"></script>
+        <script src="modules/katex/katex.min.js"></script>
+        <script src="modules/chainer/lib/chainer-lib.js"></script>
+        <script src="modules/chainer/ui/chainer.js"></script>
+        <script src="modules/html5bp/html5bp.js"></script>
+    </body>
+</html>
+
+<!-- vim: set expandtab ts=4 sw=4 sts=4: -->
