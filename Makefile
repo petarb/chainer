@@ -25,3 +25,5 @@ distclean: clean
 	@echo removing node_modules..
 	@rm -rf node_modules
 .PHONY:	distclean
+
+-include Makefile.inc
