@@ -1,5 +1,24 @@
-Chainer is a sample implementation of a deduction chain generating algorithm in
-client-side JavaScript.  One or more formulas can be entered into a simple form
-and subsequently transformed into a set of deduction chains.
+Chainer is a sample implementation of a deduction chain generating
+algorithm in client-side JavaScript.  One or more formulas can be
+entered into a simple form and subsequently transformed into a set
+of deduction chains.
 
 https://smokva.net/chainer/
+
+
+Building Chainer:
+
+$ # install node.js
+$ git clone https://github.com/petarb/chainer.git
+$ cd chainer
+$ make
+
+
+Running Chainer:
+
+$ firefox index.html
+
+
+Installing Chainer:
+
+$ cp -R index.html modules /path/to/www
